@@ -30,3 +30,11 @@ remove.addEventListener('click', () => {
     ingredients.pop();
     renderIngredients();
 });
+
+save.addEventListener('click', () => {
+    const name = mealName.value;
+    const count = ingredients.length;
+    meals.push({ name, count });
+    renderMeals();
+    resetIngredients();
+});
