@@ -1,4 +1,4 @@
-import { renderIngredientLI } from './utils.js';
+import { renderIngredientLI, renderMealLI } from './utils.js';
 
 const form = document.getElementById('add-ingredient');
 const ingredientList = document.getElementById('ingredient-list');
@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const item = {
-        ingredient: data.get('ingredient'),
+        ingredient: data.get('Ingredient'),
         qty: data.get('qty'),
         measurement: data.get('measurement'),
         calories: Number(data.get('calories')),

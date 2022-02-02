@@ -20,22 +20,22 @@
                 <h1>Create the recipe!</h1>
 
                 <form id="add-ingredient">
+                    <label>Food Item</label>
+                    <input type="text" name="Ingredient" id="Ingredients" />
                     <label> Quantity: </label>
                     <input type="number" name="qty" id="qty" />
                     <label> Measurement: </label>
                     <select name="measurement" id="serving">
-                        <option value="cups">Cups</option>
+                        <option value="cups">cups</option>
                         <option value="grams">Grams</option>
                         <option value="ml">Milliliter</option>
                         <option value="tsp">Teaspoons</option>
                         <option value="tbsp">Tablespoon</option>
                     </select>
+                    <button id="add-item">Add item</button>
                 </form>
 
-                <input type="text" name="Ingredients" id="Ingredients" />
-
                 <div id="Ingredients-list"></div>
-                <button id="Add-item">Add item</button>
                 <div class="ingredient-list">
                     <ul id="ingredient-list"></ul>
                     <button id="remove">Remove Last Item</button>
@@ -45,7 +45,7 @@
                 <h3>Save Meal</h3>
                 <label>
                     Meal Name
-                    <input type="text" id="meal-name">
+                    <input type="text" id="meal-name" />
                 </label>
                 <button id="save-meal">Save Meal</button>
             </section>
