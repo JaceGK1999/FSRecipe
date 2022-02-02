@@ -54,3 +54,8 @@ function renderIngredients() {
         ingredientList.appendChild(li);
     }
 }
+
+function resetIngredients() {
+    ingredients = [];
+    ingredientList.textContent = '';
+}
