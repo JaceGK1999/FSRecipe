@@ -1,8 +1,10 @@
-// import functions and grab DOM elements
+import { renderIngredientLI } from './utils.js';
 
-// let state
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+function renderIngredients() {
+    ingredientList.textContent = '';
+    for (let item of ingredients) {
+        const li = renderIngredientLI(item);
+        ingredientList.appendChild(li);
+    }
+}
