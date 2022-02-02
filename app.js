@@ -1,10 +1,14 @@
 import { renderIngredientLI } from './utils.js';
 
 
-function renderIngredients() {
-    ingredientList.textContent = '';
-    for (let item of ingredients) {
-        const li = renderIngredientLI(item);
-        ingredientList.appendChild(li);
-    }
-}
+const form = document.getElementById('add-ingredient');
+const ingredientList = document.getElementById('ingredient-list');
+const mealList = document.getElementById('meal-list');
+
+const remove = document.getElementById('remove');
+
+const mealName = document.getElementById('meal-name');
+const save = document.getElementById('save-meal');
+
+let ingredients = [];
+let meals = [];
