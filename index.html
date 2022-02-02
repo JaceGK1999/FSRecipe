@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/home.css" />
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
-</head>
+    <body>
+        <main>
+            <section id="Sec-One">
+                <h1>Create the recipe!</h1>
 
-<body>
-    
-    <main>
+                <form id="add-ingredient">
+                    <label> Quantity: </label>
+                    <input type="number" name="qty" id="qty" />
+                    <label> Measurement: </label>
+                    <select name="measurement" id="serving">
+                        <option value="cups">Cups</option>
+                        <option value="grams">Grams</option>
+                        <option value="ml">Milliliter</option>
+                        <option value="tsp">Teaspoons</option>
+                        <option value="tbsp">Tablespoon</option>
+                    </select>
+                </form>
 
+                <input type="text" name="Ingredients" id="Ingredients" />
 
+                <div id="Ingredients-list"></div>
+                <button id="Add-item">Add item</button>
+                <div class="ingredient-list">
+                    <ul id="ingredient-list"></ul>
+                    <button id="remove">Remove Last Item</button>
+                </div>
+            </section>
+        </main>
 
-        </section>
-    </main>
-
-    <script type="module" src="./app.js"></script>
-</body>
-
+        <script type="module" src="./app.js"></script>
+    </body>
 </html>
