@@ -25,3 +25,8 @@ form.addEventListener('submit', (e) => {
     renderIngredients();
     form.reset();
 });
+
+remove.addEventListener('click', () => {
+    ingredients.pop();
+    renderIngredients();
+});
