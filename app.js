@@ -38,3 +38,19 @@ save.addEventListener('click', () => {
     renderMeals();
     resetIngredients();
 });
+
+function renderMeals() {
+    mealList.textContent = '';
+    for (let meal of meals) {
+        const li = renderMealLI(meal);
+        mealList.append(li);
+    }
+}
+
+function renderIngredients() {
+    ingredientList.textContent = '';
+    for (let item of ingredients) {
+        const li = renderIngredientLI(item);
+        ingredientList.appendChild(li);
+    }
+}
